@@ -38,6 +38,14 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "http://remi-store.com/",
   },
+  {
+    id: 5,
+    title: "landing page for Traninig",
+    image: "/images/projects/5.jpg",
+    tag: ["All", "LandingPage"],
+    gitUrl: "/",
+    previewUrl:"https://traning-landingpage-bzfo.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {

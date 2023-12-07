@@ -1,0 +1,75 @@
+#Statistics{
+    width: 100%;
+    margin-top: 100px;
+}
+.Statisticsontent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+}
+.statisInfo{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid var(--green);
+    border-top: 7px  solid var(--green)!important;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 40px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+.statisInfo i{
+    font-size: 3rem;
+line-height: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--green);
+transition: all 0.2s ease-in-out 0s;
+}
+.statisInfo p{
+ display: block;
+font-size: 3rem;
+font-weight: 600;
+line-height: 1.6;
+margin-bottom: 0;
+color: var(--green);
+}
+.statisInfo span{
+    text-align: center;
+    color: var(--green);
+}
+@media (max-width:992px) {
+    .Statisticsontent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .statisInfo{
+        width: 60%;
+    }
+}
+@media (max-width:700px) {
+    .Statisticsontent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .statisInfo{
+        width: 80%;
+    }
+}
+.stat-desc{
+    font-size: 20px;
+}
+.statisInfo:hover{
+    border-top: 7px  solid var(--yallow)!important;
+    background-color: var(--green);
+    transform: translateY(-13px);
+}
+.statisInfo:hover i , span , p{
+      color: var(--yallow);
+}
+.statisInfo:hover span{
+    color: var(--yallow);
+}

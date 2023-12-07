@@ -1,0 +1,135 @@
+#footer{
+    padding: 30px 0;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+.contact{
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-around; */
+    margin: 20px 30px;
+    height: 100%;
+}
+
+.contact iframe{
+    border: none;
+}
+.contact form{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    width: 45%;
+    
+   
+}
+.contact  .form-group{
+    margin: 15px 10px;
+}
+.contact form input  , textarea {
+    background-color: transparent;
+border-color: currentcolor currentcolor #e5e5e5;
+border-radius: 0;
+border-style: none none solid;
+border-width: 0 0 1px;
+box-shadow: none;
+color: #000;
+display: block;
+font-size: 14px;
+height: auto;
+line-height: 1.5;
+padding: 6px 0;
+-webkit-transition: border-color 0.2s ease 0s;
+transition: border-color 0.2s ease 0s;
+width: 100%;
+}
+.contact input::placeholder{
+    font-size: 15px;
+}
+.contact input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--green);
+}
+.contact input:hover{
+    border-bottom: 1px solid var(--green);
+}
+.contact textarea:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--green);
+}
+.contact textarea:hover{
+    border-bottom: 1px solid var(--green);
+}
+.contact textarea::placeholder{
+    font-size: 15px;
+}
+.contact button{
+    border: none;
+    background: linear-gradient(to right, rgba(43,87,72,255), rgba(74,130,82,255));
+    color: var(--white);
+    width: 80%;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: var(--min-d);
+}
+.contact button:hover{
+    background: transparent !important;
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+@media (max-width:900px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    iframe {
+        width: 80%;
+        margin: 15px auto;
+    }
+    form {
+        width: 80% !important;
+        margin: 15px auto;
+    }
+}
+.icons{
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+.icons i{
+    background: transparent;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    transition: .3s;
+    margin-right: 20px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    color: #8ca0b4;
+    display: inline-block;
+  }
+  .icons i:hover{
+    background-image: linear-gradient(to right, rgba(43,87,72,255), rgba(74,130,82,255));
+    color: var(--yallow);
+  }
+.copy{
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    margin-bottom: 0;
+    justify-content: center;
+
+}
+.copy p{
+  color: black;
+}

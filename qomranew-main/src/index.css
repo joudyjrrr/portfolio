@@ -1,0 +1,34 @@
+
+* {
+  box-sizing: border-box;
+}
+:root{
+--green:#2e5749;
+--yallow:#f3c623;
+--white:#fff;
+--black: rgba(10, 10, 10, 0.44);
+--min-d: 0.3s;
+--mid-d: 0.5s;
+scroll-behavior: smooth;
+
+}
+*{
+margin: 0;
+scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Tajawal",sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--b-c);
+  direction: rtl;
+  padding: 0;
+  margin: 0
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}

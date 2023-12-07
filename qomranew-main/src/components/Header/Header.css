@@ -1,0 +1,120 @@
+header{
+    width: 100%;
+    margin: 0 10px;
+    position: fixed;
+    top: 0;
+    left: -10px;
+    background-color: var(--white);
+    z-index: 3;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul {
+   display: flex;
+   gap: 25px;
+   justify-content: center;
+   margin: 40px 0;
+   transition-duration: var(--min-d);
+   margin-right: 100px;
+}
+header ul a{
+    color: var(--green);
+    font-size: 18px;
+   font-weight: 700;
+  cursor: pointer;
+  transition-duration: var(--min-d);
+}
+header ul li{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+header ul li:hover{
+    background-color: var(--green);
+}
+header ul li:hover a{
+   color: var(--white);
+}
+
+header .imge{
+    width: 60px;
+    display: flex;
+    margin: 12px -42px;
+}
+header .imge img{
+    width: 100%;
+}
+.controle{
+    display: flex;
+    margin: 40px 0;
+    gap: 15px;
+}
+.menu{
+    display: none;
+}
+.controle i {
+    color: var(--green);
+    font-size: 26px;
+    cursor: pointer;
+}
+@media (max-width:762px) {
+    .menu{
+        display: block;
+    }
+    .minNav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--green);
+        position: fixed;
+        z-index: 20;
+        margin: 0px 0px;
+        top: 100px;
+        left: 0px;
+        text-align: center;
+    }
+    .minNav li{
+        margin: 5px auto;
+        transition: var(--min-d);
+    }
+    .minNav li a{
+        color: var(--white);
+    }
+    header ul{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        gap: 200px;
+    }
+    .modaloverlay{
+        position: fixed;
+      z-index: 7;
+        width: 100%;
+         height: 100%;
+        background-color: var(--black);
+         top: 0;
+        left: 0;
+    }
+    .close{
+        position: fixed;
+        z-index: 20;
+        left: 127px;
+        top: 35px;
+        font-size: 25px;
+        color: var(--white);
+        cursor: pointer;
+    }
+   .minNav li:hover {
+    border: 1px solid var(--white);
+   }
+}
+
+@media (min-width: 768px) {
+    .modaloverlay {
+      display: none;
+    }
+  }
+  
