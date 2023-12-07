@@ -23,7 +23,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "",
+    title: "landingPage for Apex",
     description: "",
     image: "/images/projects/3.jpg",
     tag: ["All", "LandingPage"],
