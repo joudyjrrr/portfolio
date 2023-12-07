@@ -1,5 +1,5 @@
 "use client";
-import React, { useState  , useRef} from "react";
+import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
@@ -7,57 +7,36 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    title: "landingPage for Ulu tech",
+    image: "/images/projects/1.jpg",
+    tag: ["All", "LandingPage"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "http://3.214.164.25:84",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    title: "landingpage for Qumra",
+    image: "/images/projects/2.jpg",
+    tag: ["All", "LandingPage"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://qumra-6x8g.vercel.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    title: "",
+    description: "",
+    image: "/images/projects/3.jpg",
+    tag: ["All", "LandingPage"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://landingpage-lilac-beta.vercel.app/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    title: " Remi Dashboard",
+    image: "/images/projects/4.jpg",
+    tag: ["All", "Dashboard"],
     gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "http://remi-store.com/",
   },
 ];
 
@@ -66,7 +45,7 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag : any) => {
+  const handleTagChange = (newTag: any) => {
     setTag(newTag);
   };
 
@@ -92,16 +71,19 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="LandingPage"
+          isSelected={tag === "LandingPage"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Dashboard"
+          isSelected={tag === "Dashboard"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul
+        ref={ref}
+        className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12"
+      >
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

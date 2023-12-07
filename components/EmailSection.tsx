@@ -8,7 +8,7 @@ import Image from "next/image";
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e : any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     const data = {
       email: e.target.email.value,
@@ -55,11 +55,21 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
+        <div className=" flex flex-col gap-2 mb-5">
+          <div className=" flex  gap-4">
+            <h6 className="text-white font-semibold">My Email :</h6>
+            <p className="text-[#ADB7BE]">joudyjries7@gmail.com</p>
+          </div>
+          <div className=" flex  gap-4">
+            <h6 className="text-white font-semibold">Phone Number :</h6>
+            <p className="text-[#ADB7BE]">+963936196129</p>
+          </div>
+        </div>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/joudyjrrr">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/joudy-jreis-678354275/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
