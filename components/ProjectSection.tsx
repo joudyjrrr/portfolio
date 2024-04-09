@@ -46,6 +46,38 @@ const projectsData = [
     gitUrl: "/",
     previewUrl:"https://traning-landingpage-bzfo.vercel.app/",
   },
+  {
+    id: 6,
+    title: "landing page for Archouse",
+    image: "/images/projects/6.jpg",
+    tag: ["All", "LandingPage"],
+    gitUrl: "/",
+    previewUrl:"https://arc-hoseee.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "landing page for ICanCopmany",
+    image: "/images/projects/7.jpg",
+    tag: ["All", "LandingPage"],
+    gitUrl: "/",
+    previewUrl:"https://icanwep.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Dashboard for htc Company (Under development)",
+    image: "/images/projects/8.jpg",
+    tag: ["All", "Dashboard"],
+    gitUrl: "/",
+    previewUrl:"https://warsha-frontend.vercel.app/",
+  },
+  {
+    id: 8,
+    title: " HumyPionnerDashboard",
+    image: "/images/projects/9.jpg",
+    tag: ["All", "Dashboard"],
+    gitUrl: "/",
+    previewUrl:"",
+  },
 ];
 
 const ProjectsSection = () => {
