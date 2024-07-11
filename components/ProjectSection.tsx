@@ -86,14 +86,7 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "http://accapp.plus-99.com/",
   },
-  {
-    id: 8,
-    title: " OorFeel Dashboard",
-    image: "/images/projects/10.jpg",
-    tag: ["All", "Dashboard"],
-    gitUrl: "/",
-    previewUrl: "https://dashboard.oorfeel.com",
-  },
+ 
   {
     id: 8,
     title: " OorFeel Dashboard",
